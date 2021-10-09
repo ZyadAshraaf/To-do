@@ -1,0 +1,59 @@
+body {
+    position: relative;
+}
+
+
+/*-------------Add task popup---------------*/
+
+.addTaskConatiner {
+    width: 98%;
+    position: absolute;
+    z-index: 55555;
+}
+
+.addTaskConatiner .addTask {
+    top: 50px;
+}
+
+.addTaskConatiner .addTask .addTaskHeader i {
+    font-size: 20px;
+    color: #343A40;
+}
+
+.addTaskConatiner .addTask .addTaskHeader i:hover {
+    cursor: pointer;
+    color: rgb(221, 6, 6);
+}
+
+
+/*-------------End task popup---------------*/
+
+
+/*--------------Start list------------------*/
+
+.task {
+    color: #0069D9;
+    background-color: white;
+}
+
+.checked {
+    text-decoration-line: line-through;
+    color: red;
+    background-color: lightgray;
+}
+
+.task i {
+    color: #343A40;
+}
+
+.task i:hover {
+    cursor: pointer;
+    color: rgb(221, 6, 6);
+}
+
+
+/*--------------End list------------------*/
+
+.none {
+    display: none;
+}

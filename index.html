@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do</title>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/all.min.css">
+    <link rel="stylesheet" href="./css/main.css">
+</head>
+
+<body class="bg-dark">
+    <!--------------------Add task popup start------------------------>
+    <div class="addTaskConatiner none">
+        <div class="row ">
+            <div class=" addTask col-lg-4 col-md-6 col-10 bg-white rounded-lg m-auto p-2">
+                <div class="addTaskHeader ">
+                    <h4 class="d-inline m-2">Add Task</h4>
+                    <i class="fas fa-times  float-right m-2" id="closeSignId"></i>
+                </div>
+                <hr>
+                <div class="addTaskContent py-4">
+                    <div class="content w-75 bg-dark p-3 text-center text-primary m-auto rounded-lg">
+                        <h5 class="mb-3">Add Task</h5>
+                        <input class="form-control w-75 m-auto " type="text" id="taskInput" placeholder="Task name">
+                        <div class="text-danger none" id="alert-message">Please enter a valid task name</div>
+                        <button type="button" id="addNowBtnId" class="btn btn-primary w-50 mt-2 ">Add now</button>
+                    </div>
+                </div>
+                <hr>
+                <div class="addTaskFooter">
+
+                    <button type="button" id="closeBtnId" class="btn btn-secondary float-right">close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------Add task popup End------------------------>
+
+
+
+
+    <!-----------List start-------------------->
+    <div class="control w-100  mt-4 text-center text-primary">
+        <h1>TO DO LIST</h1>
+        <button type="button" id="addTaskBtnId" class="btn btn-primary w-25 mt-4 mb-4">Add task</button>
+        <div class="row"></div>
+        <div class="col-lg-6 col-10 bg-secondary m-auto p-1 rounded-lg">
+            <div id="no-item" class="alert alert-danger mx-3 my-3 " role="alert">
+                No data added yet.
+            </div>
+            <div id="list"></div>
+        </div>
+    </div>
+    <!----------------List End-------------->
+
+
+
+
+
+
+    <script src="./js/jquery-3.5.1.slim.min.js"></script>
+    <script src="./js/popper.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/main.js "></script>
+</body>
+
+</html>
